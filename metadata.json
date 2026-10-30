@@ -1,0 +1,9 @@
+{
+  "name": "CamFix DSIT Enterprise Operations",
+  "description": "Autonomous Campus Facilities & AI Incident Operations Management System for Dhanalakshmi Srinivasa Institute of Technology.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-primary-fixed":"#001453","on-secondary-fixed":"#00201d","on-tertiary":"#ffffff","on-secondary-container":"#006f66","surface-tint":"#3755c3","on-secondary-fixed-variant":"#005049","error":"#ba1a1a","tertiary":"#002e81","outline-variant":"#c4c5d5","on-tertiary-container":"#a4b9ff","tertiary-fixed":"#dbe1ff","tertiary-container":"#0042b2","on-background":"#131b2e","surface-container":"#eaedff","secondary-fixed":"#89f5e7","inverse-primary":"#b8c4ff","outline":"#757684","surface-container-high":"#e2e7ff","primary":"#00288e","primary-container":"#1e40af","on-error":"#ffffff","on-tertiary-fixed":"#00174b","tertiary-fixed-dim":"#b4c5ff","primary-fixed-dim":"#b8c4ff","surface-dim":"#d2d9f4","surface-variant":"#dae2fd","surface-container-lowest":"#ffffff","secondary-container":"#86f2e4","primary-fixed":"#dde1ff","error-container":"#ffdad6","surface-bright":"#faf8ff","inverse-on-surface":"#eef0ff","on-primary-fixed-variant":"#173bab","on-error-container":"#93000a","on-primary-container":"#a8b8ff","inverse-surface":"#283044","on-surface-variant":"#444653","on-surface":"#131b2e","secondary":"#006a61","surface-container-low":"#f2f3ff","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","on-tertiary-fixed-variant":"#003ea8","background":"#faf8ff","secondary-fixed-dim":"#6bd8cb","surface":"#faf8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","space-md":"1rem","gutter":"1.5rem","margin":"2rem","space-lg":"1.5rem","gutter-lg":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-xl":"2.5rem"},fontFamily:{"label-sm":["Inter"],"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"code-xs":["JetBrains Mono"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-hero":["40px",{"lineHeight":"48px","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"code-xs":["10px",{"lineHeight":"14px","fontWeight":"500"}],"display-hero-mobile":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CamFix Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XGDh3uoWoflBc4Rma1GYEvaqbswQPlQr0nRtl6g9yg0x2vhWBnBiR2TMAyjSYVU4FCVZ_2bgZp1NLqHyBOnVpeOquthH6nTeS9of-xy4t1tv9_3UQKMINs_0tX8GK_ZUo67QGwCjN8yKecNeTpr36jN91aERYcKpsyBbX0TO1rmMSfW25jWLIBs4tPQH9JvnbCswRBlXXKFxOqkbzDMqQpur8nhawAdNxyQ4kU0Hc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">CamFix</span><span class="font-code-xs text-code-xs text-on-surface-variant uppercase tracking-wider">Enterprise Ops</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-base">domain</span><span class="font-label-sm text-label-sm text-on-surface truncate">Apex University</span></div><span class="font-code-xs text-code-xs text-secondary font-semibold px-space-xs py-0.5 bg-secondary-container/30 rounded">Central</span></div></div><nav class="px-space-sm py-space-sm flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Core Operations</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Overview &amp; Command</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="complaint-management" href="#"><span class="material-symbols-outlined text-[20px]">assignment_late</span><span class="font-label-md text-label-md">Complaints &amp; AI Triage</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="staff-assignment" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-md text-label-md">Smart Staff Assignment</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-facility-booking" href="#"><span class="material-symbols-outlined text-[20px]">meeting_room</span><span class="font-label-md text-label-md">Room &amp; Facilities</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Spatial &amp; Assets</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="digital-twin-map" href="#"><span class="material-symbols-outlined text-[20px]">view_in_ar</span><span class="font-label-md text-label-md">Campus Digital Twin 3D</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="equipment-asset-registry" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-label-md text-label-md">Equipment &amp; Assets</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory-spare-parts" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-md text-label-md">Spare Parts &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="procurement-approvals" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-md text-label-md">Approvals &amp; Procurement</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Intelligence &amp; Resilience</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="disruption-simulator" href="#"><span class="material-symbols-outlined text-[20px]">alt_route</span><span class="font-label-md text-label-md">Disruption Simulator</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relationship-graph" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-md text-label-md">Incident Relationship Graph</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="predictive-ai-maintenance" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">Predictive Maintenance AI</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Reports &amp; Compliance</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">System</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notification-center" href="#"><span class="material-symbols-outlined text-[20px]">notifications_active</span><span class="font-label-md text-label-md">Notification Center</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="access-control" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-label-md text-label-md">Role &amp; Access Control</span></a></div></nav></div><div class="p-space-sm m-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Health</span><span class="font-code-xs text-code-xs text-secondary font-bold">99.8%</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[99.8%]"></div></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-code-xs text-code-xs">v4.8.2 Engine</span><span class="font-code-xs text-code-xs text-outline">Synced</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low shadow-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Live Campus Grid: <span class="text-secondary font-semibold">99.4% Operational</span></span><span class="font-code-xs text-code-xs px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold">4 Active</span></div><div class="relative flex-1 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-12 py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Quick search complaints, assets, buildings, staff... (Cmd+K)" type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-code-xs text-code-xs text-outline bg-surface-container-low px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-space-sm"><button class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-tertiary">shield_person</span><div class="flex flex-col text-left"><span class="font-code-xs text-code-xs text-outline">Role: Ops Admin</span><span class="font-label-sm text-label-sm text-primary font-semibold">Switch Role</span></div></button><button class="hidden sm:flex items-center gap-space-xs px-2.5 py-1.5 rounded-lg bg-error-container text-on-error-container hover:bg-error/20 transition-colors"><span class="material-symbols-outlined text-[18px] text-error">fmd_bad</span><span class="font-label-sm text-label-sm font-semibold">Emergency Ticker</span></button><button class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span><span class="font-label-md text-label-md font-medium">New Ticket / Sim</span></button><div class="relative"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error text-on-error font-code-xs text-[10px] flex items-center justify-center font-bold">6</span></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj80j4IO6bD632jmVrZ13l1QDiys91ZU13cxKPGsOGdelEOb7V6XG2JGyPMU05LnAvlG56qxvwrtdsPplNgR3cY_Ejzreg24zSL5YlubPgVZmyxcm8X7lCOsih5T-9x4zCiMJT5rgEbqtO9dZ-UAgKm9wr4a6edfcxeKtHu5TZccRDqjl5eTgAPM32NKDxAOMmA0Fz761DjYmw6UdmGd3k6VoFCERs9CPgehj-iC0"/><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Aris Vance</span><span class="font-code-xs text-code-xs text-on-surface-variant leading-tight">Ops Director</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-md py-space-md min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Operational Banner & Student Session Bar -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm mb-space-md">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Complaint Center &amp; AI Neural Triage</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-code-xs text-code-xs font-semibold">Model v4.2 NLP Active</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Auto-Clustering Running</span>
+<span>•</span>
+<span>Redundant Ticket Suppression: <strong class="text-secondary font-code-xs text-code-xs">84.2%</strong></span>
+<span>•</span>
+<span>Current SLA Turnaround: <strong class="text-on-surface font-code-xs text-code-xs">1h 48m</strong></span>
+</div>
+</div>
+</div>
+<!-- Pre-populated Student Credentials Card -->
+<div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-2.5 rounded-xl">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Close up modern collegiate profile portrait of a smiling computer science female university student named Sarah Jenkins with soft natural window lighting, clean corporate higher education style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNK1Uj-mruRQdEiwkHJm3s_pCsTpLbBjchXUjNhcz0DbNE-4wezqlgk0Tml5FK6Ig1siB3tuJmZnHFQFpoktMy8JyMegijCFaMBcan3CiepdX6uWZAh3fOh8hCoIPi5gSTTyW0UGNHyu_3tn8Dakn1x31vmJp0p17kYnpFpjbSpwlI7rM3cOiK7GgQCF-CKWZwYCD38z2a27IcxzfVtQx_J4mtbjco6nSX8A6LU4U"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Sarah Jenkins</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-medium">21BCE1092</span>
+</div>
+<span class="font-code-xs text-code-xs text-outline">Dept: Computer Science • 3rd Year (Sec B) • Apex Central</span>
+</div>
+<button class="ml-2 flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm font-label-md text-label-md font-medium" id="toggleSubmitModalBtn">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Submit Issue</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bento Section: Left Module 1 (Submission & Auto-Detection) | Right Module 2 (AI Duplicate Clustered Engine) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md mb-space-lg">
+<!-- LEFT: Fast-Triage Ticket Submission Station (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">assignment_add</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Two-Tier Incident Triage Portal</span>
+</div>
+<div class="flex items-center gap-1 p-1 bg-surface-container-low rounded-lg">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all font-semibold flex items-center gap-1" id="methodPhotoTab" onclick="switchSubmissionMode('photo')">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span> Dual Vision AI
+          </button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="methodTextTab" onclick="switchSubmissionMode('text')">
+<span class="material-symbols-outlined text-[16px]">edit_note</span> NLP Direct
+          </button>
+</div>
+</div>
+<!-- Mode 1: Photo-based submission with Vision AI parsing -->
+<div class="flex flex-col gap-space-md" id="photoModeContainer">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Image upload view & canvas bounding box -->
+<div class="md:col-span-6 flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Uploaded Visual Proof (Auto-Scanned)</label>
+<div class="relative w-full h-48 rounded-xl overflow-hidden shadow-inner group">
+<img class="w-full h-full object-cover" data-alt="Interior view of a university lecture hall ceiling projector unit Epson damaged with dangling broken HDMI cables and flickering lens in bright academic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFFzG3dx2nL6yx5ZQQc-fDSs7Rqf9jpP5ELn-1BF6EZuwLNcNQa9w9SvU9u7KLmvCDFNqH0ysp_DICZo_Lp1gg5aNIvSIJKzz8KitI12EbJjkeEtne-MAYC5uANBtp-XMFkxfsoxJYPh533QBEcF1lVHlSrbu9t2zskS3rvMVGOOx0u5MIahuREZdirfr30Pe-SkFVohcvXb_QL7qAt5nOmxZV04HPYhhyMkWc5zc"/>
+<div class="absolute inset-0 bg-primary-fixed/20 backdrop-blur-[0.5px]"></div>
+<!-- AI Bounding Boxes -->
+<div class="absolute top-6 left-10 w-28 h-20 rounded bg-secondary-container/20 shadow-sm flex flex-col justify-between p-1 animate-pulse">
+<span class="font-code-xs text-[9px] px-1 py-0.5 bg-secondary text-on-secondary rounded font-semibold w-max">EPSON-EB700 [98.4%]</span>
+<span class="font-code-xs text-[8px] text-on-secondary-fixed bg-surface-container-lowest/80 px-1 rounded w-max">Chassis Fractured</span>
+</div>
+<div class="absolute bottom-4 right-12 w-20 h-14 rounded bg-error-container/40 p-1 flex items-start">
+<span class="font-code-xs text-[9px] px-1 py-0.5 bg-error text-on-error rounded font-semibold">Broken Socket</span>
+</div>
+<button class="absolute bottom-2 left-2 px-2 py-1 bg-surface-container-lowest/90 backdrop-blur rounded text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm hover:bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px]">refresh</span> Re-scan Media
+              </button>
+</div>
+<span class="font-code-xs text-code-xs text-outline">Captured via Mobile Web App • Geotag: Lat 12.9716, Long 79.1585</span>
+</div>
+<!-- Parsed AI Detection Payload -->
+<div class="md:col-span-6 flex flex-col justify-between bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">neurology</span> AI Optical Detection Tags
+                </span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold">99.1% Confidence</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-1">
+<span class="font-code-xs text-code-xs px-2 py-1 bg-surface-container-lowest rounded-md text-on-surface shadow-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> EPSON-EB700 Laser
+                </span>
+<span class="font-code-xs text-code-xs px-2 py-1 bg-surface-container-lowest rounded-md text-on-surface shadow-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Broken HDMI Port
+                </span>
+<span class="font-code-xs text-code-xs px-2 py-1 bg-surface-container-lowest rounded-md text-on-surface shadow-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Classroom B-204
+                </span>
+<span class="font-code-xs text-code-xs px-2 py-1 bg-surface-container-lowest rounded-md text-on-surface shadow-xs">
+                  Physical Shell Stress: 74%
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+                Vision Transformer matched asset barcode with central inventory registry: <code class="font-code-xs text-code-xs text-primary font-bold bg-surface-container-high px-1 py-0.5 rounded">AST-PRJ-0982</code>.
+              </p>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded-lg flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended Stock Spare:</span>
+<span class="font-code-xs text-code-xs font-bold text-on-surface">OEM HDMI Mother-Board v2 (#SP-441)</span>
+</div>
+</div>
+</div>
+<!-- Mode 2 & NLP Box integration -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Natural Language English Incident Description</label>
+<span class="font-code-xs text-code-xs text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_fix_high</span> Realtime Entity Extraction
+            </span>
+</div>
+<div class="relative">
+<textarea class="w-full p-space-sm bg-surface-container-lowest text-on-surface rounded-xl font-body-sm text-body-sm shadow-inner focus:outline-none focus:bg-surface-container-low transition-all resize-none" placeholder="Describe the issue in your own words..." rows="3">Our classroom overhead projector in Block B room 204 has started sparking at the HDMI socket and the image cuts out completely. We have an external guest lecture scheduled at 2:00 PM today with 85 attendees.</textarea>
+<div class="absolute bottom-2.5 right-2.5 flex items-center gap-1">
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">85 Att. Extracted</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Deadline: 14:00 Today</span>
+</div>
+</div>
+</div>
+<!-- Metadata Form Selectors (4-Column Bento Controls) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<!-- 12 Campus Categories Dropdown -->
+<div class="flex flex-col gap-1">
+<label class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Campus Category (12)</label>
+<select class="w-full px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none">
+<option selected="">AV &amp; Lecture Tech</option>
+<option>HVAC &amp; Air Quality</option>
+<option>Electrical &amp; Lighting</option>
+<option>Plumbing &amp; Sanitation</option>
+<option>Network &amp; Wi-Fi</option>
+<option>Furniture &amp; Fixtures</option>
+<option>Elevators &amp; Access</option>
+<option>Lab Specialized Rig</option>
+<option>Safety &amp; Fire Systems</option>
+<option>Grounds &amp; Pathways</option>
+<option>Hostel Living Quarters</option>
+<option>Cafeteria Equipment</option>
+</select>
+</div>
+<!-- Location Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Building / Floor / Room</label>
+<select class="w-full px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none">
+<option selected="">Block B • Fl 2 • Room 204</option>
+<option>Block A • Fl 1 • Room 102</option>
+<option>Block C • Fl 1 • Room 102 (Ceiling Fan)</option>
+<option>Turing Lab • Fl 3 • Lab 309</option>
+<option>Newton Auditorium • Fl G</option>
+</select>
+</div>
+<!-- Urgency Level -->
+<div class="flex flex-col gap-1">
+<label class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Urgency Level</label>
+<select class="w-full px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none font-semibold text-error">
+<option>Low (Routine / 48 hrs)</option>
+<option>Medium (Scheduled / 24 hrs)</option>
+<option>High (Impacting classes / 4 hrs)</option>
+<option selected="">Critical (Event at Risk / 1 hr)</option>
+</select>
+</div>
+<!-- Activity Impact -->
+<div class="flex flex-col gap-1">
+<label class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Activity Impact</label>
+<select class="w-full px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none">
+<option>Regular Class Session</option>
+<option>Formal Examination</option>
+<option>Lab Experimentation</option>
+<option selected="">Campus Guest Event</option>
+</select>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>Duplicate clustering check will execute instantly upon dispatch.</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm flex items-center gap-1.5">
+<span>Execute AI Triage &amp; Dispatch</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT: Master AI Duplicate Clustering Engine (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">hub</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Duplicate Clustering Engine</span>
+</div>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Live Resolver
+        </span>
+</div>
+<!-- Incident Cluster Hero Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-code-xs text-code-xs uppercase tracking-wider text-outline">Master Incident Parent #CLUST-049</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">
+              Block C Room 102 Ceiling Fan Wobble &amp; Noise
+            </h3>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Hazard Risk: High</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">Asset #FAN-C102</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-md text-headline-md font-bold text-secondary">98%</span>
+<span class="font-code-xs text-code-xs text-on-secondary-container font-semibold">Semantic Match</span>
+</div>
+</div>
+<!-- Clustered Single Dispatch Resolution Banner -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">KR</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Kumar R. (HVAC &amp; Electrical)</span>
+<span class="font-code-xs text-code-xs text-outline">Single Tech Assigned • Prevents 5 Redundant Trips</span>
+</div>
+</div>
+<span class="font-code-xs text-code-xs font-semibold px-2 py-1 rounded bg-secondary-container text-on-secondary-container">Dispatched</span>
+</div>
+</div>
+<!-- List of 6 Linked Student Reports in Cluster -->
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">
+          Clustered Student Reports (6 Connected Nodes)
+        </span>
+<span class="font-code-xs text-code-xs text-outline">Linked to Unified Timeline</span>
+</div>
+<div class="flex flex-col gap-2 max-h-[260px] overflow-y-auto pr-1">
+<!-- Student Item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed font-code-xs text-[11px] font-bold flex items-center justify-center">AM</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Aarav Mehta <span class="text-outline font-normal">(22ECE041)</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[210px]">"Fan in middle row rattling violently during microelectronics..."</span>
+</div>
+</div>
+<span class="font-code-xs text-code-xs font-semibold text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">Synced</span>
+</div>
+<!-- Student Item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-xs text-[11px] font-bold flex items-center justify-center">PS</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Priya Sundaram <span class="text-outline font-normal">(21BCE099)</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[210px]">"C102 ceiling fan makes screeching motor grinding sounds"</span>
+</div>
+</div>
+<span class="font-code-xs text-code-xs font-semibold text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">Synced</span>
+</div>
+<!-- Student Item 3 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-xs text-[11px] font-bold flex items-center justify-center">DK</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">David Kim <span class="text-outline font-normal">(23MECH12)</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[210px]">"Fan blade wobbling off center in room 102 Block C dangerous"</span>
+</div>
+</div>
+<span class="font-code-xs text-code-xs font-semibold text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">Synced</span>
+</div>
+<!-- Student Item 4 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface font-code-xs text-[11px] font-bold flex items-center justify-center">RN</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Rhea Nair <span class="text-outline font-normal">(22BCE481)</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-[210px]">"Wobble in room 102 fan above front benches"</span>
+</div>
+</div>
+<span class="font-code-xs text-code-xs font-semibold text-secondary px-1.5 py-0.5 rounded bg-surface-container-lowest">Synced</span>
+</div>
+<!-- Student Item 5 & 6 indicators -->
+<div class="p-2 rounded-lg bg-surface-container-low/60 flex items-center justify-between text-on-surface-variant font-code-xs text-code-xs">
+<span>+2 Additional reports merged (Tanya W., Omar Z.)</span>
+<span class="text-primary font-medium cursor-pointer hover:underline">View All 6 Payloads →</span>
+</div>
+</div>
+<!-- Timeline Broadcast Status footer -->
+<div class="mt-auto pt-space-sm">
+<div class="px-space-sm py-2 rounded-lg bg-secondary-container/20 flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Realtime Broadcast: All 6 students notified with Kumar R.'s live ETA.</span>
+</div>
+<span class="font-code-xs text-code-xs font-bold text-secondary">Active Ping</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Workspace: Interactive Student Complaint Tracking Table & Multi-Stage Detail Drawer -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">table_rows</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Campus Incident Tracking Matrix</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live lifecycle audit for student and faculty work requests</span>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto">
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">All Active (18)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">In Progress (7)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">Spare Parts (3)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">AI Clustered (4)</button>
+<button class="px-2 py-1 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+<!-- The Master Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low font-code-xs text-code-xs text-outline uppercase tracking-wider">
+<th class="px-space-md py-3 font-semibold">Incident Ref</th>
+<th class="px-space-md py-3 font-semibold">Category</th>
+<th class="px-space-md py-3 font-semibold">Location</th>
+<th class="px-space-md py-3 font-semibold">Assigned Tech</th>
+<th class="px-space-md py-3 font-semibold">Lifecycle Status</th>
+<th class="px-space-md py-3 font-semibold">Target SLA</th>
+<th class="px-space-md py-3 font-semibold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<!-- Row 1: Selected / Spotlight CFX-8921 -->
+<tr class="bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer" onclick="openDetailDrawer('CFX-8921')">
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-code-sm text-code-sm font-bold text-primary">CFX-8921</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-semibold">Critical</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate block max-w-[220px]">Epson Projector Burning / HDMI Failure</span>
+</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+<span>AV &amp; Lecture Tech</span>
+</div>
+</td>
+<td class="px-space-md py-3.5 font-label-md text-label-md text-on-surface">Block B • Rm 204</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-code-xs text-[10px] font-bold flex items-center justify-center">MS</div>
+<span>Marcus Shaw</span>
+</div>
+</td>
+<td class="px-space-md py-3.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/60 text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Waiting for Spare Parts
+              </span>
+</td>
+<td class="px-space-md py-3.5 font-code-xs text-code-xs">
+<span class="text-error font-bold">13:45 Today</span>
+<span class="text-outline block">(1h 15m remaining)</span>
+</td>
+<td class="px-space-md py-3.5 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold">View Detail</button>
+</td>
+</tr>
+<!-- Row 2: Clustered Group Incident -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openDetailDrawer('CFX-8919')">
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm font-bold text-on-surface">CFX-8919</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-bold">6 Clustered</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface truncate block max-w-[220px]">Master: Ceiling Fan Wobble Severe</span>
+</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">mode_fan</span>
+<span>HVAC &amp; Electrical</span>
+</div>
+</td>
+<td class="px-space-md py-3.5 font-label-md text-label-md text-on-surface">Block C • Rm 102</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-code-xs text-[10px] font-bold flex items-center justify-center">KR</div>
+<span>Kumar R.</span>
+</div>
+</td>
+<td class="px-space-md py-3.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> In Progress
+              </span>
+</td>
+<td class="px-space-md py-3.5 font-code-xs text-code-xs">
+<span class="text-on-surface font-bold">14:30 Today</span>
+<span class="text-outline block">(2h 00m remaining)</span>
+</td>
+<td class="px-space-md py-3.5 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold">Inspect</button>
+</td>
+</tr>
+<!-- Row 3: Plumbing Issue -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openDetailDrawer('CFX-8904')">
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-code-sm text-code-sm font-bold text-on-surface">CFX-8904</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant">Medium</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface truncate block max-w-[220px]">Washroom Sensor Tap Water Loss</span>
+</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">water_drop</span>
+<span>Plumbing &amp; Sanitation</span>
+</div>
+</td>
+<td class="px-space-md py-3.5 font-label-md text-label-md text-on-surface">Turing Wing • Fl 1</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-code-xs text-[10px] font-bold flex items-center justify-center">TL</div>
+<span>T. Logan</span>
+</div>
+</td>
+<td class="px-space-md py-3.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Assigned
+              </span>
+</td>
+<td class="px-space-md py-3.5 font-code-xs text-code-xs">
+<span class="text-on-surface font-bold">17:00 Today</span>
+<span class="text-outline block">(4h 30m remaining)</span>
+</td>
+<td class="px-space-md py-3.5 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold">Inspect</button>
+</td>
+</tr>
+<!-- Row 4: Solved ticket with re-open trigger -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer" onclick="openDetailDrawer('CFX-8877')">
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm font-bold text-on-surface">CFX-8877</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 rounded bg-surface-container-high text-outline">Resolved</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface truncate block max-w-[220px]">CS Lab 309 Ethernet Patch Switch Offline</span>
+</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">wifi</span>
+<span>Network &amp; Wi-Fi</span>
+</div>
+</td>
+<td class="px-space-md py-3.5 font-label-md text-label-md text-on-surface">Newton Lab • Fl 3</td>
+<td class="px-space-md py-3.5">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface font-code-xs text-[10px] font-bold flex items-center justify-center">AJ</div>
+<span>Anita Joshi</span>
+</div>
+</td>
+<td class="px-space-md py-3.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Resolved
+              </span>
+</td>
+<td class="px-space-md py-3.5 font-code-xs text-code-xs">
+<span class="text-secondary font-bold">Completed</span>
+<span class="text-outline block">Yesterday (16:10)</span>
+</td>
+<td class="px-space-md py-3.5 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-sm text-label-sm">History</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Stepper & Detailed Incident Inspection Drawer (Interactive Modal Sheet Container) -->
+<div class="p-space-lg bg-surface-container-low border-t border-surface-container" id="incidentDetailDrawer">
+<div class="flex flex-col xl:flex-row justify-between gap-space-lg">
+<!-- Left: Lifecycle Stepper & Before/After Proofs -->
+<div class="xl:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Inspection View: CFX-8921</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-error-container text-on-error-container font-bold">Classroom B-204</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reported by: <strong>Sarah Jenkins</strong> (21BCE1092)</span>
+</div>
+<!-- Multi-stage Status Stepper (7 Stages) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-3 font-semibold">Ticket Lifecycle Progress</span>
+<div class="relative flex items-center justify-between">
+<div class="absolute left-3 right-3 top-3.5 h-0.5 bg-surface-container-highest -z-0"></div>
+<div class="absolute left-3 w-[66%] top-3.5 h-0.5 bg-primary -z-0"></div>
+<!-- 1: Submitted -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-code-xs text-[11px] font-bold">✓</div>
+<span class="font-code-xs text-[10px] text-primary font-bold">Submitted</span>
+</div>
+<!-- 2: Under Review -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-code-xs text-[11px] font-bold">✓</div>
+<span class="font-code-xs text-[10px] text-primary font-bold">Reviewed</span>
+</div>
+<!-- 3: Assigned -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-code-xs text-[11px] font-bold">✓</div>
+<span class="font-code-xs text-[10px] text-primary font-bold">Assigned</span>
+</div>
+<!-- 4: In Progress -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-code-xs text-[11px] font-bold">✓</div>
+<span class="font-code-xs text-[10px] text-primary font-bold">In Progress</span>
+</div>
+<!-- 5: Waiting for Spare Parts (Active) -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-error text-on-error flex items-center justify-center font-code-xs text-[11px] font-bold ring-4 ring-error-container">5</div>
+<span class="font-code-xs text-[10px] text-error font-bold">Spare Parts</span>
+</div>
+<!-- 6: Resolved -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-code-xs text-[11px] font-bold">6</div>
+<span class="font-code-xs text-[10px] text-outline font-medium">Resolved</span>
+</div>
+<!-- 7: Closed -->
+<div class="flex flex-col items-center gap-1 z-10">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-code-xs text-[11px] font-bold">7</div>
+<span class="font-code-xs text-[10px] text-outline font-medium">Closed</span>
+</div>
+</div>
+</div>
+<!-- Before / After Photo Comparison Tabs -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-xs">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface uppercase tracking-wider">Visual Verification Telemetry</span>
+<div class="flex gap-1 p-0.5 bg-surface-container-low rounded-lg">
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-md bg-surface-container-lowest text-primary shadow-xs font-semibold" id="btnBeforePhoto" onclick="togglePhotoTab('before')">Incident Initial (Before)</button>
+<button class="px-3 py-1 font-label-sm text-label-sm rounded-md text-on-surface-variant hover:text-on-surface" id="btnAfterPhoto" onclick="togglePhotoTab('after')">Technician Repair (After)</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="relative rounded-lg overflow-hidden h-40" id="photoBeforeFrame">
+<img class="w-full h-full object-cover" data-alt="High detail photo of a damaged audio visual projector port with torn insulation and burnt pin connector taken in academic classroom ceiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU-ayw30yakt6JgCBVZx7BJS4gMRtUxt8GboLrM6zNWJvlsxw3gbAqD8PyEv2rds45R_n9Y_NtrsvSvysSCDxBQI4bn2ft8HFXqTm6OqgLFsNLoy7l3idz37fHpAigb7IYca8HVp-gyRPy88-ZsIm-2DvvKK2paf4JlfWJrVbGGRR7HsN3_Mt0N43FVOMhMBEXfavIH7cyEuRY0yYr5ZF3pmkqsxVSCy_aqH5WNOE"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-error text-on-error font-code-xs text-code-xs font-bold">Submitted State (10:14 AM)</span>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-lowest/90 text-on-surface font-code-xs text-[10px]">Photo Hash: #IMG-8921-A</span>
+</div>
+<div class="relative rounded-lg overflow-hidden h-40 bg-surface-container-low flex flex-col items-center justify-center text-center p-3" id="photoAfterFrame">
+<span class="material-symbols-outlined text-[36px] text-outline">pending_actions</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface mt-1">Awaiting Technician Final Photo</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Marcus Shaw checked out spare board <code class="font-code-xs text-code-xs bg-surface-container-highest px-1">SP-441</code> from Depot 2. Upload pending bench testing.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Dispatch Actions, SLA Countdown & Re-Open Trigger -->
+<div class="xl:w-5/12 flex flex-col justify-between bg-surface-container-lowest p-space-md rounded-xl shadow-xs">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-low">
+<span class="font-label-md text-label-md font-bold text-on-surface">Target Resolution &amp; Actions</span>
+<span class="font-code-xs text-code-xs font-bold text-error bg-error-container/40 px-2 py-0.5 rounded">SLA Deadline: 13:45</span>
+</div>
+<!-- Technician Snapshot -->
+<div class="p- space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-2.5">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm">MS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Marcus Shaw</span>
+<span class="font-code-xs text-code-xs text-outline">Senior AV Systems Engineer • Radio ID #81</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs hover:bg-surface-container-high transition-colors">Call / Ping</button>
+</div>
+<!-- Parts Requisition alert -->
+<div class="p-2.5 bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm font-semibold">
+<span>Spare Parts Requisition #PR-9022</span>
+<span class="text-secondary font-code-xs text-code-xs">Courier En Route</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1x EPSON OEM Board Module • Central Store Bay 04</span>
+</div>
+<!-- AI Impact Advisory -->
+<div class="p-2.5 rounded-lg bg-secondary-container/20 flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">crisis_alert</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-secondary-container">Classroom Schedule Collision Alert</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Guest lecture starts in 75 minutes. If repair exceeds 13:15, automated rerouting can book adjacent Room B-208.</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons: Re-Open & Resolve Handlers -->
+<div class="pt-space-md mt-space-md border-t border-surface-container-low flex items-center justify-between gap-space-sm">
+<!-- Re-Open Complaint Trigger Modal Opener -->
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-error font-label-md text-label-md font-semibold transition-colors flex items-center gap-1" onclick="triggerReopenModal('CFX-8921')">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Re-Open Incident</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors">
+                Escalate Tier
+              </button>
+<button class="px-4 py-2 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-fixed-variant font-label-md text-label-md font-semibold transition-colors shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirm Resolution</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Re-Open Incident Interactive Modal (Hidden by default, triggered via JS) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-xs flex items-center justify-center p-space-md" id="reopenModal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[24px]">replay</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Re-Open Incident Ticket</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeReopenModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="p-space-sm rounded-lg bg-error-container/30 text-on-error-container font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Re-opening ticket <strong class="font-code-xs text-code-xs" id="reopenTicketRef">CFX-8921</strong> resets active technician assignment and triggers high-priority supervisor review.</span>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Reason for Unsatisfactory / Incomplete Fix</label>
+<select class="w-full p-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Issue reoccurred within 24 hours of repair</option>
+<option>Hardware fixed but secondary cabling still broken</option>
+<option>Cleanliness / Classroom safety debris left behind</option>
+<option>Incorrect asset was serviced</option>
+<option>Other technical dispute</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Student / Staff Observation Notes</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" placeholder="Specify why the repair was unsuccessful..." rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" onclick="closeReopenModal()">Cancel</button>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold hover:bg-on-error-container transition-colors shadow-sm" onclick="confirmReopenAction()">Submit Re-Open Request</button>
+</div>
+</div>
+</div>
+<!-- Inline Client Interaction Script -->
+<script>
+    function switchSubmissionMode(mode) {
+      const photoTab = document.getElementById('methodPhotoTab');
+      const textTab = document.getElementById('methodTextTab');
+      
+      if (mode === 'photo') {
+        photoTab.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all font-semibold flex items-center gap-1";
+        textTab.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1";
+      } else {
+        textTab.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all font-semibold flex items-center gap-1";
+        photoTab.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1";
+      }
+    }
+
+    function togglePhotoTab(view) {
+      const btnBefore = document.getElementById('btnBeforePhoto');
+      const btnAfter = document.getElementById('btnAfterPhoto');
+      const photoBefore = document.getElementById('photoBeforeFrame');
+      const photoAfter = document.getElementById('photoAfterFrame');
+
+      if (view === 'before') {
+        btnBefore.className = "px-3 py-1 font-label-sm text-label-sm rounded-md bg-surface-container-lowest text-primary shadow-xs font-semibold";
+        btnAfter.className = "px-3 py-1 font-label-sm text-label-sm rounded-md text-on-surface-variant hover:text-on-surface";
+        photoBefore.classList.remove('opacity-40');
+        photoAfter.classList.add('opacity-40');
+      } else {
+        btnAfter.className = "px-3 py-1 font-label-sm text-label-sm rounded-md bg-surface-container-lowest text-primary shadow-xs font-semibold";
+        btnBefore.className = "px-3 py-1 font-label-sm text-label-sm rounded-md text-on-surface-variant hover:text-on-surface";
+        photoAfter.classList.remove('opacity-40');
+        photoBefore.classList.add('opacity-40');
+      }
+    }
+
+    function openDetailDrawer(ticketId) {
+      const drawer = document.getElementById('incidentDetailDrawer');
+      if (drawer) {
+        drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function triggerReopenModal(ticketRef) {
+      document.getElementById('reopenTicketRef').innerText = ticketRef;
+      document.getElementById('reopenModal').classList.remove('hidden');
+    }
+
+    function closeReopenModal() {
+      document.getElementById('reopenModal').classList.add('hidden');
+    }
+
+    function confirmReopenAction() {
+      alert("Incident re-opened successfully. Escalation pushed to Operations Supervisor & assigned technician Kumar R.");
+      closeReopenModal();
+    }
+  </script>
+</div></main></div></body></html>

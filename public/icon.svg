@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- App Icon Background with Rounded Curvature -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Subtle Grid Accent -->
+  <g opacity="0.12" stroke="#ffffff" stroke-width="2">
+    <line x1="64" y1="128" x2="448" y2="128" />
+    <line x1="64" y1="256" x2="448" y2="256" />
+    <line x1="64" y1="384" x2="448" y2="384" />
+    <line x1="128" y1="64" x2="128" y2="448" />
+    <line x1="256" y1="64" x2="256" y2="448" />
+    <line x1="384" y1="64" x2="384" y2="448" />
+  </g>
+
+  <!-- Modern Campus Building Silhouette Backing -->
+  <path d="M120 370 L120 280 L200 240 L280 240 L310 210 L392 210 L392 370 Z" fill="#1e293b" opacity="0.6" />
+
+  <!-- Outer Camera Shutter Hex/Ring -->
+  <circle cx="256" cy="256" r="148" fill="none" stroke="url(#primaryGrad)" stroke-width="14" stroke-dasharray="16 12" opacity="0.85" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="120" fill="#0f172a" stroke="#38bdf8" stroke-width="6" />
+
+  <!-- Camera Aperture & Shutter Blade Stylized Center -->
+  <circle cx="256" cy="256" r="76" fill="url(#primaryGrad)" />
+  <circle cx="256" cy="256" r="44" fill="#0f172a" />
+  <circle cx="256" cy="256" r="24" fill="#38bdf8" />
+  <circle cx="244" cy="244" r="8" fill="#ffffff" opacity="0.9" />
+
+  <!-- Focus Viewfinder Corners -->
+  <path d="M 160 180 L 160 160 L 180 160" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 352 180 L 352 160 L 332 160" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 160 332 L 160 352 L 180 352" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 352 332 L 352 352 L 332 352" stroke="#38bdf8" stroke-width="8" stroke-linecap="round" fill="none" />
+
+  <!-- DSIT Badge Banner At Bottom -->
+  <rect x="136" y="386" width="240" height="42" rx="21" fill="url(#accentGrad)" />
+  <text x="256" y="413" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" letter-spacing="3">CAMPUSOPS</text>
+  
+  <!-- Live Pulse Dot -->
+  <circle cx="366" cy="146" r="12" fill="#10b981" filter="url(#glow)" />
+  <circle cx="366" cy="146" r="6" fill="#ffffff" />
+</svg>

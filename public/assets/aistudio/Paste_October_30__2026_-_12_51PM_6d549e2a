@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-primary-fixed":"#001453","on-secondary-fixed":"#00201d","on-tertiary":"#ffffff","on-secondary-container":"#006f66","surface-tint":"#3755c3","on-secondary-fixed-variant":"#005049","error":"#ba1a1a","tertiary":"#002e81","outline-variant":"#c4c5d5","on-tertiary-container":"#a4b9ff","tertiary-fixed":"#dbe1ff","tertiary-container":"#0042b2","on-background":"#131b2e","surface-container":"#eaedff","secondary-fixed":"#89f5e7","inverse-primary":"#b8c4ff","outline":"#757684","surface-container-high":"#e2e7ff","primary":"#00288e","primary-container":"#1e40af","on-error":"#ffffff","on-tertiary-fixed":"#00174b","tertiary-fixed-dim":"#b4c5ff","primary-fixed-dim":"#b8c4ff","surface-dim":"#d2d9f4","surface-variant":"#dae2fd","surface-container-lowest":"#ffffff","secondary-container":"#86f2e4","primary-fixed":"#dde1ff","error-container":"#ffdad6","surface-bright":"#faf8ff","inverse-on-surface":"#eef0ff","on-primary-fixed-variant":"#173bab","on-error-container":"#93000a","on-primary-container":"#a8b8ff","inverse-surface":"#283044","on-surface-variant":"#444653","on-surface":"#131b2e","secondary":"#006a61","surface-container-low":"#f2f3ff","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","on-tertiary-fixed-variant":"#003ea8","background":"#faf8ff","secondary-fixed-dim":"#6bd8cb","surface":"#faf8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-sm":"1rem","space-sm":"0.5rem","gutter-sm":"1rem","space-md":"1rem","gutter":"1.5rem","margin":"2rem","space-lg":"1.5rem","gutter-lg":"2rem","space-xs":"0.25rem","margin-lg":"3rem","space-xl":"2.5rem"},fontFamily:{"label-sm":["Inter"],"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"code-sm":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"code-xs":["JetBrains Mono"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-hero":["40px",{"lineHeight":"48px","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"code-xs":["10px",{"lineHeight":"14px","fontWeight":"500"}],"display-hero-mobile":["30px",{"lineHeight":"38px","fontWeight":"700"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="CamFix Enterprise Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XGDh3uoWoflBc4Rma1GYEvaqbswQPlQr0nRtl6g9yg0x2vhWBnBiR2TMAyjSYVU4FCVZ_2bgZp1NLqHyBOnVpeOquthH6nTeS9of-xy4t1tv9_3UQKMINs_0tX8GK_ZUo67QGwCjN8yKecNeTpr36jN91aERYcKpsyBbX0TO1rmMSfW25jWLIBs4tPQH9JvnbCswRBlXXKFxOqkbzDMqQpur8nhawAdNxyQ4kU0Hc"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">CamFix</span><span class="font-code-xs text-code-xs text-on-surface-variant uppercase tracking-wider">Enterprise Ops</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-low rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-base">domain</span><span class="font-label-sm text-label-sm text-on-surface truncate">Apex University</span></div><span class="font-code-xs text-code-xs text-secondary font-semibold px-space-xs py-0.5 bg-secondary-container/30 rounded">Central</span></div></div><nav class="px-space-sm py-space-sm flex flex-col gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg"><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Core Operations</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Overview &amp; Command</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="complaint-management" href="#"><span class="material-symbols-outlined text-[20px]">assignment_late</span><span class="font-label-md text-label-md">Complaints &amp; AI Triage</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="staff-assignment" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-md text-label-md">Smart Staff Assignment</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="room-facility-booking" href="#"><span class="material-symbols-outlined text-[20px]">meeting_room</span><span class="font-label-md text-label-md">Room &amp; Facilities</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Spatial &amp; Assets</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="digital-twin-map" href="#"><span class="material-symbols-outlined text-[20px]">view_in_ar</span><span class="font-label-md text-label-md">Campus Digital Twin 3D</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="equipment-asset-registry" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-label-md text-label-md">Equipment &amp; Assets</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory-spare-parts" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-md text-label-md">Spare Parts &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="procurement-approvals" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span class="font-label-md text-label-md">Approvals &amp; Procurement</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">Intelligence &amp; Resilience</span><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary font-semibold shadow-sm rounded-lg" data-path="disruption-simulator" href="#"><span class="material-symbols-outlined text-[20px]">alt_route</span><span class="font-label-md text-label-md">Disruption Simulator</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relationship-graph" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="font-label-md text-label-md">Incident Relationship Graph</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="predictive-ai-maintenance" href="#"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-label-md text-label-md">Predictive Maintenance AI</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Reports &amp; Compliance</span></a></div><div class="flex flex-col gap-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-outline uppercase tracking-wider">System</span><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notification-center" href="#"><span class="material-symbols-outlined text-[20px]">notifications_active</span><span class="font-label-md text-label-md">Notification Center</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="access-control" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-label-md text-label-md">Role &amp; Access Control</span></a></div></nav></div><div class="p-space-sm m-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Health</span><span class="font-code-xs text-code-xs text-secondary font-bold">99.8%</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[99.8%]"></div></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-code-xs text-code-xs">v4.8.2 Engine</span><span class="font-code-xs text-code-xs text-outline">Synced</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-low shadow-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Live Campus Grid: <span class="text-secondary font-semibold">99.4% Operational</span></span><span class="font-code-xs text-code-xs px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-semibold">4 Active</span></div><div class="relative flex-1 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-12 py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Quick search complaints, assets, buildings, staff... (Cmd+K)" type="text"/><span class="absolute right-2.5 top-1/2 -translate-y-1/2 font-code-xs text-code-xs text-outline bg-surface-container-low px-1.5 py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-space-sm"><button class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-tertiary">shield_person</span><div class="flex flex-col text-left"><span class="font-code-xs text-code-xs text-outline">Role: Ops Admin</span><span class="font-label-sm text-label-sm text-primary font-semibold">Switch Role</span></div></button><button class="hidden sm:flex items-center gap-space-xs px-2.5 py-1.5 rounded-lg bg-error-container text-on-error-container hover:bg-error/20 transition-colors"><span class="material-symbols-outlined text-[18px] text-error">fmd_bad</span><span class="font-label-sm text-label-sm font-semibold">Emergency Ticker</span></button><button class="flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add</span><span class="font-label-md text-label-md font-medium">New Ticket / Sim</span></button><div class="relative"><button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-error text-on-error font-code-xs text-[10px] flex items-center justify-center font-bold">6</span></div><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj80j4IO6bD632jmVrZ13l1QDiys91ZU13cxKPGsOGdelEOb7V6XG2JGyPMU05LnAvlG56qxvwrtdsPplNgR3cY_Ejzreg24zSL5YlubPgVZmyxcm8X7lCOsih5T-9x4zCiMJT5rgEbqtO9dZ-UAgKm9wr4a6edfcxeKtHu5TZccRDqjl5eTgAPM32NKDxAOMmA0Fz761DjYmw6UdmGd3k6VoFCERs9CPgehj-iC0"/><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Aris Vance</span><span class="font-code-xs text-code-xs text-on-surface-variant leading-tight">Ops Director</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-md py-space-md min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-xs text-code-xs uppercase tracking-wider text-secondary px-2 py-0.5 rounded bg-secondary-container/30 font-semibold">Resilience Engine v4.9</span>
+<span class="font-code-xs text-code-xs text-outline">•</span>
+<span class="font-code-xs text-code-xs text-on-surface-variant font-medium">Predictive Spatial Modeling</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary px-2 py-0.5 rounded-full bg-surface-container-high">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+          Air-Gapped Sandbox Active
+        </span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface font-bold">What-If Disruption Simulator &amp; Incident Graph</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+        Autonomous blast-radius modeling and structural causal analysis. Evaluate contingency strategies across academic, physical, and technical networks prior to dispatch execution.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center bg-surface-container-lowest shadow-sm rounded-lg p-1">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm" id="mode-sim-btn" onclick="switchMainView('sim')">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+          Simulator Cockpit
+        </button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" id="mode-graph-btn" onclick="switchMainView('graph')">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+          Causal Incident Graph
+        </button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm" onclick="toggleCompareModal()">
+<span class="material-symbols-outlined text-[18px] text-primary">difference</span>
+        Compare Scenarios
+      </button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-medium hover:opacity-95 shadow-sm transition-all" onclick="triggerMitigation()">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+        Execute Mitigation Workflow
+      </button>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Dynamic Disruption Preset</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Select Pre-configured Stress Vector</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-xs flex-1 max-w-4xl">
+<button class="scenario-btn text-left p-2.5 rounded-lg transition-all bg-surface-container-high text-primary shadow-sm" id="btn-scen-A" onclick="setScenario('A')">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-xs text-code-xs font-bold text-primary">SCENARIO A</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+<div class="font-label-sm text-label-sm font-semibold truncate text-on-surface">Block A 3rd Fl. Outage</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant truncate">Electrical Bus failure</div>
+</button>
+<button class="scenario-btn text-left p-2.5 rounded-lg transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" id="btn-scen-B" onclick="setScenario('B')">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-xs text-code-xs font-semibold text-outline">SCENARIO B</span>
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+</div>
+<div class="font-label-sm text-label-sm font-semibold truncate text-on-surface">HVAC Crew Flu Outbreak</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant truncate">Staff capacity -65%</div>
+</button>
+<button class="scenario-btn text-left p-2.5 rounded-lg transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" id="btn-scen-C" onclick="setScenario('C')">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-xs text-code-xs font-semibold text-outline">SCENARIO C</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<div class="font-label-sm text-label-sm font-semibold truncate text-on-surface">Core Gateway Switch Down</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant truncate">Campus Wi-Fi partitioned</div>
+</button>
+<button class="scenario-btn text-left p-2.5 rounded-lg transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" id="btn-scen-D" onclick="setScenario('D')">
+<div class="flex items-center justify-between mb-1">
+<span class="font-code-xs text-code-xs font-semibold text-outline">SCENARIO D</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+<div class="font-label-sm text-label-sm font-semibold truncate text-on-surface">Compound Storm Surge</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant truncate">Water ingress + Surge</div>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-code-xs text-code-xs uppercase font-semibold text-outline tracking-wider">Affected Spaces</span>
+<span class="material-symbols-outlined text-primary text-[20px]">domain_disabled</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-rooms">12</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Rooms offline</span>
+</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant mt-1" id="stat-rooms-detail">Labs 301-306, Halls 310-312</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-3/4"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-code-xs text-code-xs uppercase font-semibold text-outline tracking-wider">Student &amp; Exams</span>
+<span class="material-symbols-outlined text-error text-[20px]">school</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-error" id="stat-students">420</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">Occupants</span>
+</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant mt-1" id="stat-exams-detail">3 Mid-Semester Finals at risk</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-5/6"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-code-xs text-code-xs uppercase font-semibold text-outline tracking-wider">Equipment Offline</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">desktop_windows</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-hardware">91</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Units</span>
+</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant mt-1" id="stat-hardware-detail">84 Workstations, 6 AV, 1 HVAC</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-3/5"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-code-xs text-code-xs uppercase font-semibold text-outline tracking-wider">Crew Required</span>
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface" id="stat-staff">3</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Specialists</span>
+</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant mt-1" id="stat-staff-detail">2 Sr. Electrical, 1 Net Eng</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-2/3"></div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-code-xs text-code-xs uppercase font-semibold text-outline tracking-wider">Inventory Stock</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary" id="stat-parts">100%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Stocked</span>
+</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant mt-1" id="stat-parts-detail">32A Contactors: 4, Cat6: 1</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">alt_route</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Dynamic Blast Radius &amp; Automated Action Routing</span>
+<span class="font-code-xs text-code-xs text-outline block">Causal propagation path derived from Building A Electrical Sub-Bus 3</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-code-xs text-code-xs px-2 py-1 rounded bg-secondary-container/30 text-secondary font-semibold">Auto-Generated Plan</span>
+<span class="font-code-xs text-code-xs text-outline bg-surface-container-low px-2 py-1 rounded">Confidence: 99.1%</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-code-xs text-code-xs font-bold shrink-0 mt-0.5">1</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Emergency Academic Re-allocation</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Priority 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Reroute <strong class="text-on-surface">CS302 AI Final Examination</strong> (78 Students) → <span class="text-secondary font-semibold">Block B Auditorium Hall 104</span>. Capacity: 120 seats, AC online, verified dual power generator backup.
+                </p>
+<div class="flex items-center gap-space-sm mt-1.5">
+<span class="font-code-xs text-code-xs text-outline">Target Timeslot: 10:00 - 13:00 IST</span>
+<span class="font-code-xs text-code-xs text-secondary font-medium">Space Vacant • Approved</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm transition-all" onclick="showToast('Classroom Lock Engaged for Hall 104')">Preview Room</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all shadow-sm" onclick="showToast('CS302 Re-allocation Locked &amp; Scheduled')">Lock Booking</button>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-code-xs text-code-xs font-bold shrink-0 mt-0.5">2</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Field Engineering Smart Dispatch</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-semibold">Rapid Response</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Auto-dispatch order generated for <strong class="text-on-surface">Kumar R. (Sr. High-Voltage Eng.)</strong> and <strong class="text-on-surface">Vikram S. (Electrical Specialist)</strong>. ETA to Block A Substation: 6 minutes.
+                </p>
+<div class="flex items-center gap-space-sm mt-1.5">
+<span class="font-code-xs text-code-xs text-outline">Equipment Carrier ID: EC-409</span>
+<span class="font-code-xs text-code-xs text-primary font-medium">Work Order #WO-8910 Issued</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm transition-all" onclick="showToast('Calling Field Radio Dispatch...')">Radio Ping</button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:opacity-95 transition-all shadow-sm" onclick="showToast('Dispatch Directive Confirmed')">Confirm Dispatch</button>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm hover:bg-surface-container transition-all">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-code-xs text-code-xs font-bold shrink-0 mt-0.5">3</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Campus Mass Notification Push</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">Digital Broadcaster</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Multi-channel notification (SMS, CamFix Mobile App, In-Hall Smart Screens) drafted for <strong class="text-on-surface">420 impacted students</strong> and <strong class="text-on-surface">4 academic invigilators</strong>.
+                </p>
+<div class="flex items-center gap-space-sm mt-1.5">
+<span class="font-code-xs text-code-xs text-outline">Delivery Channel: Mobile App + SMS + Hall Screens</span>
+<span class="font-code-xs text-code-xs text-secondary font-medium">Draft Ready</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm transition-all" onclick="showToast('Broadcasting Live Notification...')">Preview SMS</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all shadow-sm" onclick="showToast('Blast Notification Dispatched to 420 Students')">Broadcast Now</button>
+</div>
+</div>
+</div>
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-body-sm text-body-sm">Audit Safe Sandbox: Simulation executes isolated runtime state without altering live physical building relays.</span>
+</div>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold shrink-0" onclick="showToast('Simulation Snapshot saved to Institutional Compliance Audit Trail')">Save Simulation Audit</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Physical Asset Impact Assessment</h3>
+</div>
+<span class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Telemetry Live</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-xs text-code-xs font-semibold text-outline">CRITICAL HUB</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 bg-error-container text-on-error-container rounded font-bold">DOWN</span>
+</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Substation Transformer A-3</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant">415V 3-Phase • Overload Trip (142%)</div>
+<div class="mt-2 flex items-center justify-between font-code-xs text-code-xs text-outline">
+<span>Cooling: 89°C</span>
+<span class="text-error font-bold">Needs Tech Reset</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-xs text-code-xs font-semibold text-outline">AIR HANDLER</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 bg-amber-100 text-amber-900 rounded font-bold">FAILSAFE</span>
+</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Central AHU 03 (Floor 3)</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant">CFM: 0 (Static) • Dampers Closed</div>
+<div class="mt-2 flex items-center justify-between font-code-xs text-code-xs text-outline">
+<span>Indoor Temp: +3.2°C/hr</span>
+<span class="text-amber-700 font-bold">Temp rising</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-xs text-code-xs font-semibold text-outline">COMPUTE CLUSTER</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.2 bg-surface-container-high text-on-surface-variant rounded font-bold">STANDBY</span>
+</div>
+<div class="font-label-md text-label-md font-bold text-on-surface">AI Lab Workstation Bank 302</div>
+<div class="font-code-xs text-code-xs text-on-surface-variant">84 RTX 4090 Rigs • Safe Power-off</div>
+<div class="mt-2 flex items-center justify-between font-code-xs text-code-xs text-outline">
+<span>UPS Battery: 18m left</span>
+<span class="text-secondary font-bold">Data Preserved</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Warehouse Stock Lock</h3>
+</div>
+<span class="font-code-xs text-code-xs text-secondary font-semibold px-2 py-0.5 bg-secondary-container/30 rounded">Instant Reserve</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Spare components automatically earmarked for Scenario A resolution order. Logistics tracking initiates upon dispatch.
+        </p>
+<div class="flex flex-col gap-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">32A 3-Phase Contactor</span>
+<span class="font-code-xs text-code-xs text-on-surface-variant">SKU: ELEC-CNT-32A-4P</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm font-bold text-secondary">1 Reserved</span>
+<span class="font-code-xs text-code-xs text-outline block">Stock: 4 units</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Cat6 Gigabit Patch Panel</span>
+<span class="font-code-xs text-code-xs text-on-surface-variant">SKU: NET-PP-48P-CAT6</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm font-bold text-secondary">1 Reserved</span>
+<span class="font-code-xs text-code-xs text-outline block">Stock: 1 unit</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Heavy Duty Copper Bus Link</span>
+<span class="font-code-xs text-code-xs text-on-surface-variant">SKU: ELEC-BUS-CU-200A</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm font-bold text-secondary">2 Reserved</span>
+<span class="font-code-xs text-code-xs text-outline block">Stock: 12 units</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md font-semibold transition-all" onclick="showToast('Hardware parts securely locked in Bay 4 Shelf B')">
+          Authorize Parts Release to Tech Kumar R.
+        </button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Historical Analogs</h3>
+</div>
+<span class="font-code-xs text-code-xs text-outline">Sim Engine AI</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Matches pattern against 48 recorded campus disruptions from the last 24 months.
+        </p>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Oct 14, 2023 Outage</span>
+<span class="font-code-xs text-code-xs text-secondary font-bold">94% similarity</span>
+</div>
+<p class="font-code-xs text-code-xs text-on-surface-variant">
+            Block C 2nd floor contactor burn out. Mean time to complete physical repair was <strong>48 minutes</strong>. 0 student academic grading incidents logged due to early hall rerouting.
+          </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Jan 22, 2024 Bus Surge</span>
+<span class="font-code-xs text-code-xs text-secondary font-bold">81% similarity</span>
+</div>
+<p class="font-code-xs text-code-xs text-on-surface-variant">
+            Repaired with dual-tech dispatch. Recovery time: <strong>34 minutes</strong> with pre-staged contactor.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md" id="graph-section">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Module 10: Smart Incident Relationship Graph</h2>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-surface-container-high text-primary font-semibold">Graph Topology: Directed DAG</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interactive causal dependency network mapping root physical failures to downstream academic, spatial, and technical disruptions.</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all" onclick="resetGraphZoom()" title="Reset Graph View">
+<span class="material-symbols-outlined text-[18px]">fit_screen</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all" onclick="toggleLegend()" title="Graph Legend">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-code-xs text-code-xs text-on-surface font-medium">1 Root Failure</span>
+<span class="font-code-xs text-code-xs text-outline mx-1">•</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-xs text-code-xs text-on-surface font-medium">6 Connected Entities</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col relative">
+<div class="h-[520px] w-full bg-surface-container-low relative select-none overflow-hidden" id="graph-container">
+<div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(#00288e 1px, transparent 1px); background-size: 24px 24px;"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none" id="graph-edges">
+<line class="animate-pulse" stroke="#ba1a1a" stroke-dasharray="6,4" stroke-width="2.5" x1="220" x2="380" y1="260" y2="120"></line>
+<line stroke="#00288e" stroke-width="2" x1="220" x2="380" y1="260" y2="260"></line>
+<line stroke="#006a61" stroke-width="2" x1="220" x2="380" y1="260" y2="400"></line>
+<line stroke="#ba1a1a" stroke-width="2" x1="380" x2="560" y1="120" y2="80"></line>
+<line stroke="#ba1a1a" stroke-width="2" x1="380" x2="560" y1="120" y2="170"></line>
+<line stroke="#00288e" stroke-width="2" x1="380" x2="560" y1="260" y2="260"></line>
+<line stroke="#006a61" stroke-width="2" x1="380" x2="560" y1="400" y2="350"></line>
+<line stroke="#006a61" stroke-width="2" x1="380" x2="560" y1="400" y2="440"></line>
+</svg>
+<div class="absolute inset-0 p-4">
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-3 rounded-xl shadow-md flex items-center gap-3 transition-transform hover:scale-105" id="node-root" onclick="selectNode('root')" style="left: 110px; top: 220px;">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">flash_on</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-error font-bold uppercase">Root Incident</span>
+<span class="font-label-md text-label-md font-bold text-on-surface whitespace-nowrap">Transformer Surge #A-3</span>
+<span class="font-code-xs text-code-xs text-outline">415V Phase Imbalance</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-grid" onclick="selectNode('grid')" style="left: 320px; top: 80px;">
+<div class="w-8 h-8 rounded-lg bg-error-container/60 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">electrical_services</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-error font-semibold">Sub-Grid Offline</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">Block A Power Grid</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-reports" onclick="selectNode('reports')" style="left: 320px; top: 230px;">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">mark_chat_unread</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-primary font-semibold">Duplicated Inquiries</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">14 Student Reports</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-tech" onclick="selectNode('tech')" style="left: 320px; top: 370px;">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-secondary font-semibold">Staff Assigned</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">Tech Kumar R.</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-exam" onclick="selectNode('exam')" style="left: 540px; top: 40px;">
+<div class="w-8 h-8 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">event_busy</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-error font-semibold">Disrupted &amp; Relocated</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">CS302 AI Final Exam</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-workstations" onclick="selectNode('workstations')" style="left: 540px; top: 140px;">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-outline font-semibold">Hardware Offline</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">Lab 302 Workstations</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-sync" onclick="selectNode('sync')" style="left: 540px; top: 235px;">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">call_merge</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-primary font-semibold">Triage Auto-Merged</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">Unified Root Ticket #9102</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-enroute" onclick="selectNode('enroute')" style="left: 540px; top: 320px;">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">directions_run</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-secondary font-semibold">Transit Live</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">En Route (ETA 4m)</span>
+</div>
+</div>
+<div class="graph-node absolute cursor-pointer bg-surface-container-lowest p-2.5 rounded-xl shadow-md flex items-center gap-2.5 transition-transform hover:scale-105" id="node-inventory" onclick="selectNode('inventory')" style="left: 540px; top: 410px;">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/50 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="flex flex-col pr-1">
+<span class="font-code-xs text-code-xs text-secondary font-semibold">Reserved Spare Unit</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface whitespace-nowrap">Contactor Unit #32A</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-3">
+<span class="font-code-xs text-code-xs text-on-surface-variant font-medium">Click any node to view real-time telemetry</span>
+<span class="font-code-xs text-code-xs px-1.5 py-0.5 rounded bg-surface-container text-outline">Pan &amp; Select Enabled</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm" id="node-inspector">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">troubleshoot</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Node Inspector</span>
+</div>
+<span class="font-code-xs text-code-xs px-2 py-0.5 rounded bg-surface-container-high text-primary font-semibold" id="inspector-badge">ROOT_CAUSE</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-code-xs text-code-xs text-outline uppercase tracking-wider">Entity Title</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="inspector-title">Substation Transformer A-3 Surge</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="inspector-desc">
+            Primary 3-phase incoming terminal experienced an unmitigated 2.4kV transient pulse, resulting in sub-bus latch trigger.
+          </span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-code-xs text-code-xs text-on-surface-variant">Asset Identifier:</span>
+<span class="font-code-xs text-code-xs font-bold text-on-surface" id="inspector-id">TX-BLK-A3-415</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-code-xs text-code-xs text-on-surface-variant">Parent Circuit:</span>
+<span class="font-code-xs text-code-xs font-bold text-on-surface" id="inspector-parent">Main Campus Grid Feed B</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-code-xs text-code-xs text-on-surface-variant">Causal Blast Radius:</span>
+<span class="font-code-xs text-code-xs font-bold text-error" id="inspector-radius">12 Rooms • 420 Students</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<span class="font-code-xs text-code-xs text-on-surface-variant">Mitigation State:</span>
+<span class="font-code-xs text-code-xs font-bold text-secondary" id="inspector-status">Intervention Plan Staged</span>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full py-2 px-3 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all shadow-sm" onclick="isolateSubtree()">
+            Isolate Sub-Graph in Digital Twin 3D
+          </button>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-medium transition-all" onclick="showToast('Incident Ticket Merging verified &amp; synced across 14 channels')">
+            Audit Linked Duplicate Tickets
+          </button>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-center justify-center p-4" id="compare-modal">
+<div class="bg-surface-container-lowest max-w-4xl w-full rounded-2xl p-space-lg shadow-xl flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">difference</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Disruption Comparison: Unmitigated vs Mitigated</h3>
+<span class="font-code-xs text-code-xs text-outline">Scenario A (Unchecked) vs Mitigation Plan A-Prime</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container-high flex items-center justify-center text-on-surface" onclick="toggleCompareModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-error-container/20 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-error">Unmitigated Scenario A</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 bg-error text-on-error rounded font-bold">Standard Drift</span>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+<span><strong>CS302 Final Exam:</strong> Cancelled entirely, re-examination cost 3.2 weeks delay.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+<span><strong>Average Downtime:</strong> 4h 15m until manual inspection starts.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+<span><strong>Helpdesk Influx:</strong> Estimated ~90 panicked duplicate phone tickets.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+<span><strong>Financial Impact:</strong> ~₹1,85,000 in overtime, rescheduling overhead.</span>
+</li>
+</ul>
+</div>
+<div class="p-space-md rounded-xl bg-secondary-container/20 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-secondary">Mitigation Plan A-Prime</span>
+<span class="font-code-xs text-code-xs px-2 py-0.5 bg-secondary text-on-secondary rounded font-bold">CamFix AI Optimized</span>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>CS302 Final Exam:</strong> Relocated to Block B Hall 104 with 0 min loss.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Average Downtime:</strong> 38 minutes (Techs pre-dispatched with exact parts).</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Helpdesk Influx:</strong> Auto-merged tickets + instantaneous 420-student SMS.</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Net Savings:</strong> 96% academic downtime reduction verified.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="toggleCompareModal()">Close</button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold" onclick="toggleCompareModal(); triggerMitigation();">Adopt Mitigation A-Prime</button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-msg">Operation completed successfully</span>
+</div>
+</div>
+</div>
+<script>
+  const scenarioData = {
+    A: {
+      rooms: 12,
+      roomsDetail: 'Labs 301-306, Halls 310-312',
+      students: 420,
+      examsDetail: '3 Mid-Semester Finals at risk',
+      hardware: 91,
+      hardwareDetail: '84 Workstations, 6 AV, 1 HVAC',
+      staff: 3,
+      staffDetail: '2 Sr. Electrical, 1 Net Eng',
+      parts: '100%',
+      partsDetail: '32A Contactors: 4, Cat6: 1'
+    },
+    B: {
+      rooms: 8,
+      roomsDetail: 'Campus HVAC Zone 4-7',
+      students: 190,
+      examsDetail: '0 Finals, 4 Lectures affected',
+      hardware: 14,
+      hardwareDetail: 'Central Chillers & Chilled Loops',
+      staff: 4,
+      staffDetail: 'Contractor Crew Requested',
+      parts: '85%',
+      partsDetail: 'Filter packs in reserve: 18'
+    },
+    C: {
+      rooms: 24,
+      roomsDetail: 'Core Library & Science Wing',
+      students: 850,
+      examsDetail: 'Online Submission Portals Down',
+      hardware: 38,
+      hardwareDetail: 'Aruba Core Switches & APs',
+      staff: 2,
+      staffDetail: '2 Senior Network Engineers',
+      parts: '100%',
+      partsDetail: 'SFP+ Transceivers in Stock'
+    },
+    D: {
+      rooms: 18,
+      roomsDetail: 'Basement Lab & Block A Level 1',
+      students: 510,
+      examsDetail: 'Robotics Midterm Displaced',
+      hardware: 110,
+      hardwareDetail: 'Sump Pumps, Distribution Panels',
+      staff: 6,
+      staffDetail: 'Combined Facility & Civils Crew',
+      parts: '92%',
+      partsDetail: 'Pumps ready, Sandbags staged'
+    }
+  };
+
+  const nodeDetails = {
+    root: {
+      badge: 'ROOT_CAUSE',
+      title: 'Substation Transformer A-3 Surge',
+      desc: 'Primary 3-phase incoming terminal experienced an unmitigated 2.4kV transient pulse, resulting in sub-bus latch trigger.',
+      id: 'TX-BLK-A3-415',
+      parent: 'Main Campus Grid Feed B',
+      radius: '12 Rooms • 420 Students',
+      status: 'Intervention Plan Staged'
+    },
+    grid: {
+      badge: 'INFRASTRUCTURE',
+      title: 'Block A Power Grid Latch',
+      desc: 'Feeder breakers 3A through 3D tripped to prevent fire cascade across academic laboratory electrical benches.',
+      id: 'GRID-FD-BLK-A',
+      parent: 'TX-BLK-A3-415',
+      radius: '8 Labs, 4 Lecture Rooms',
+      status: 'Protected Latch Active'
+    },
+    reports: {
+      badge: 'TELEMETRY_LINK',
+      title: '14 Student Complaint Reports',
+      desc: 'Mobile complaints automatically clustered by GPS & Wi-Fi BSSID; mapped as duplicate leaves of same transformer event.',
+      id: 'TKT-GRP-9102',
+      parent: 'CS302 AI Final Exam',
+      radius: '420 Enrolled Attendees',
+      status: 'Consolidated into Single Master WO'
+    },
+    tech: {
+      badge: 'PERSONNEL',
+      title: 'Field Engineer Kumar R.',
+      desc: 'Certified Senior High-Voltage technician allocated via geo-proximity algorithm. Equipped with tool set #E-14.',
+      id: 'STAFF-TECH-840',
+      parent: 'Dispatch Engine v4.9',
+      radius: 'Substation Bay A-3',
+      status: 'Acknowledged & In Route'
+    },
+    exam: {
+      badge: 'ACADEMIC_EVENT',
+      title: 'CS302 AI Final Examination',
+      desc: 'High-stakes evaluation with 78 registered examinees. Required immediate relocation to ensure accredited exam validity.',
+      id: 'ACAD-EXAM-CS302',
+      parent: 'Block A Power Grid',
+      radius: '78 Candidates • 2 Proctors',
+      status: 'Rerouted to Hall 104'
+    },
+    workstations: {
+      badge: 'HARDWARE_ASSET',
+      title: 'Lab 302 Workstations (84 Rigs)',
+      desc: 'Workstations cleanly shut down via automated network UPS broadcast before battery exhaustion.',
+      id: 'AST-CLUST-LAB302',
+      parent: 'Block A Power Grid',
+      radius: '84 Units',
+      status: 'Safe Standby State'
+    },
+    sync: {
+      badge: 'SYSTEM_TRIAGE',
+      title: 'Unified Master Ticket #9102',
+      desc: 'Merged tracking incident aggregating 14 complaints, 2 faculty inquiries, and 1 BMS telemetry fault into single pipeline.',
+      id: 'TKT-MST-9102',
+      parent: '14 Student Reports',
+      radius: 'All Block A Comms',
+      status: 'Live Sync Active'
+    },
+    enroute: {
+      badge: 'FIELD_OPS',
+      title: 'Tech Travel Telemetry',
+      desc: 'Technician transit monitored via low-power campus beacons. ETA reduced to under 4 minutes.',
+      id: 'DISP-TRACK-8910',
+      parent: 'Kumar R. & Vikram S.',
+      radius: 'Campus Walkway Central',
+      status: 'Moving at 5.2 km/h'
+    },
+    inventory: {
+      badge: 'SUPPLY_CHAIN',
+      title: '32A 3-Phase Contactor #32A',
+      desc: 'Component locked in automated dispensing cabinet. Technician authorization PIN dispatched to mobile unit.',
+      id: 'PART-ELEC-CNT-32A',
+      parent: 'Central Warehouse Bay 4',
+      radius: '1 Unit Reserved',
+      status: 'Ready for Pickup'
+    }
+  };
+
+  function setScenario(scen) {
+    const data = scenarioData[scen];
+    if (!data) return;
+
+    document.querySelectorAll('.scenario-btn').forEach(btn => {
+      btn.classList.remove('bg-surface-container-high', 'text-primary');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+    });
+
+    const activeBtn = document.getElementById('btn-scen-' + scen);
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      activeBtn.classList.add('bg-surface-container-high', 'text-primary');
+    }
+
+    document.getElementById('stat-rooms').textContent = data.rooms;
+    document.getElementById('stat-rooms-detail').textContent = data.roomsDetail;
+    document.getElementById('stat-students').textContent = data.students;
+    document.getElementById('stat-exams-detail').textContent = data.examsDetail;
+    document.getElementById('stat-hardware').textContent = data.hardware;
+    document.getElementById('stat-hardware-detail').textContent = data.hardwareDetail;
+    document.getElementById('stat-staff').textContent = data.staff;
+    document.getElementById('stat-staff-detail').textContent = data.staffDetail;
+    document.getElementById('stat-parts').textContent = data.parts;
+    document.getElementById('stat-parts-detail').textContent = data.partsDetail;
+
+    showToast('Applied Simulation Vector: Scenario ' + scen);
+  }
+
+  function selectNode(key) {
+    const info = nodeDetails[key];
+    if (!info) return;
+
+    document.querySelectorAll('.graph-node').forEach(el => {
+      el.classList.remove('ring-2', 'ring-primary', 'scale-105');
+    });
+
+    const target = document.getElementById('node-' + key);
+    if (target) {
+      target.classList.add('scale-105');
+    }
+
+    document.getElementById('inspector-badge').textContent = info.badge;
+    document.getElementById('inspector-title').textContent = info.title;
+    document.getElementById('inspector-desc').textContent = info.desc;
+    document.getElementById('inspector-id').textContent = info.id;
+    document.getElementById('inspector-parent').textContent = info.parent;
+    document.getElementById('inspector-radius').textContent = info.radius;
+    document.getElementById('inspector-status').textContent = info.status;
+  }
+
+  function switchMainView(mode) {
+    const simBtn = document.getElementById('mode-sim-btn');
+    const graphBtn = document.getElementById('mode-graph-btn');
+    const graphSec = document.getElementById('graph-section');
+
+    if (mode === 'sim') {
+      simBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm';
+      graphBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      graphBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold transition-all bg-primary-container text-on-primary shadow-sm';
+      simBtn.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+      graphSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function toggleCompareModal() {
+    const modal = document.getElementById('compare-modal');
+    modal.classList.toggle('hidden');
+  }
+
+  function triggerMitigation() {
+    showToast('Executing Mitigation Directive: Auto-rerouting exams, reserving spares, pushing 420 notices!');
+  }
+
+  function isolateSubtree() {
+    showToast('Opening Digital Twin 3D view for Substation Transformer Bay A-3...');
+  }
+
+  function resetGraphZoom() {
+    showToast('Graph viewport recalibrated to fit screen bounding box.');
+  }
+
+  function toggleLegend() {
+    showToast('Incident Graph: Red = Causal Failures, Blue = Telemetry, Green = Interventions');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    toastMsg.textContent = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3200);
+  }
+</script></main></div></body></html>
